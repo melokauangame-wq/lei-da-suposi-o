@@ -1,0 +1,577 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lei da Suposição — Rosa Fofo</title>
+  <meta name="description" content="Guia completo e cuidadoso sobre a Lei da Suposição: métodos práticos, relatos reais, planos de ação e ferramentas para manifestar com responsabilidade.">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Cookie&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --pink-1:#fff6fb;
+      --pink-2:#ffd9ec;
+      --accent:#ff5aa7;
+      --deep:#4a2638;
+      --muted:#8c5e77;
+      --card:#ffffff;
+      --glass: rgba(255,255,255,0.7);
+      --shadow: 0 12px 40px rgba(245,155,207,0.08);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:Montserrat, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      color:var(--deep);
+      background:linear-gradient(180deg,var(--pink-1),#fff);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.6;
+    }
+    header{
+      position:sticky;top:0;z-index:999;
+      display:flex;align-items:center;justify-content:space-between;
+      gap:14px;padding:16px 20px;background:linear-gradient(90deg,var(--pink-2),var(--pink-1));
+      box-shadow:0 6px 16px rgba(255,140,185,0.06);
+    }
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{
+      width:66px;height:66px;border-radius:14px;
+      display:flex;align-items:center;justify-content:center;
+      background:linear-gradient(135deg,var(--accent),#ff85b6);
+      color:white;font-family:Cookie,cursive;font-size:26px;font-weight:700;
+      box-shadow:0 6px 20px rgba(255,90,167,0.14);
+    }
+    nav{display:flex;gap:10px;align-items:center}
+    nav a{color:var(--deep);text-decoration:none;padding:8px 10px;border-radius:10px;font-weight:600}
+    nav a:hover{background:var(--glass)}
+    .cta{background:var(--accent);color:white;padding:10px 14px;border-radius:12px;text-decoration:none;font-weight:700;box-shadow:0 8px 20px rgba(255,95,160,0.12)}
+    .container{max-width:1200px;margin:28px auto;padding:0 18px}
+    .hero{display:flex;gap:22px;align-items:flex-start;flex-wrap:wrap}
+    .hero-card{flex:1;min-width:300px;background:var(--card);border-radius:16px;padding:18px;box-shadow:var(--shadow)}
+    .side-card{width:360px;min-width:260px}
+    h1{margin:0 0 8px;font-size:40px}
+    h2{margin-top:26px;color:var(--deep)}
+    p.lead{color:var(--muted);margin-top:6px}
+    .badge{display:inline-block;background:var(--pink-2);color:var(--deep);padding:6px 10px;border-radius:999px;font-weight:700;font-size:12px}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+    .card{background:var(--card);border-radius:14px;padding:14px;box-shadow:var(--shadow)}
+    .post-card{border-radius:12px;overflow:hidden;background:linear-gradient(180deg,#fff,var(--pink-1));transition:transform .22s}
+    .post-card:hover{transform:translateY(-6px)}
+    .post-thumb{width:100%;height:220px;object-fit:cover;display:block}
+    .muted{color:var(--muted)}
+    .story{border-radius:12px;padding:12px;background:linear-gradient(180deg,#fff,var(--pink-1));box-shadow:var(--shadow)}
+    hr.sep{border:none;height:1px;background:linear-gradient(90deg,transparent,#ffd8ea,transparent);margin:18px 0;border-radius:2px}
+    details{background:#fff;border-radius:10px;padding:10px;border:1px solid #ffe6f2}
+    summary{font-weight:700;cursor:pointer}
+    .small{font-size:14px;color:var(--muted)}
+    .center{text-align:center}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;text-decoration:none;background:var(--accent);color:white;font-weight:700}
+    .footer{margin-top:36px;padding:22px 18px;text-align:center;color:var(--muted);background:linear-gradient(180deg,var(--pink-2),#fff)}
+    .meta{font-size:13px;color:var(--muted)}
+    /* responsive */
+    @media(max-width:980px){ .grid-3{grid-template-columns:1fr} .side-card{width:100%} h1{font-size:32px} }
+    @media(max-width:700px){ nav{display:none} header{padding:12px} .hero{flex-direction:column} .post-thumb{height:160px} }
+    /* readable blocks */
+    .readable{max-width:900px}
+    .toc{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+    .toc a{color:var(--accent);text-decoration:none;font-weight:600;background:rgba(255,90,167,0.06);padding:6px 8px;border-radius:8px}
+    /* form */
+    input[type="email"], input[type="text"], textarea, select{
+      width:100%;padding:10px;border-radius:10px;border:1px solid #ffdfe9;font-size:14px;margin-bottom:10px;
+    }
+    /* subtle link */
+    a.sublink{color:var(--accent);text-decoration:none;font-weight:700}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand" aria-label="marca">
+      <div class="logo" aria-hidden="true">LS</div>
+      <div>
+        <div style="font-weight:700">Lei da Suposição</div>
+        <div style="font-size:13px;color:var(--muted)">Rosa Fofo — manifeste com responsabilidade</div>
+      </div>
+    </div>
+
+    <nav aria-label="menu principal">
+      <a href="#home" onclick="scrollToId(event,'home')">Início</a>
+      <a href="#blog" onclick="scrollToId(event,'blog')">Blog</a>
+      <a href="#metodos" onclick="scrollToId(event,'metodos')">Métodos</a>
+      <a href="#historias" onclick="scrollToId(event,'historias')">Histórias</a>
+      <a href="#faq" onclick="scrollToId(event,'faq')">FAQ</a>
+      <a class="cta" href="#contato" onclick="scrollToId(event,'contato')">Contato</a>
+    </nav>
+  </header>
+
+  <main class="container" id="home" role="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-card">
+        <h1 id="hero-title">Aprenda a aplicar a Lei da Suposição — com métodos práticos e histórias reais</h1>
+        <p class="lead">Conteúdo pensado para quem quer resultados mas preserva bem-estar: passos simples, práticas testadas, guias longos e exemplos reais para você seguir.</p>
+
+        <div class="toc" aria-hidden="false">
+          <a href="#metodos">Ver métodos</a>
+          <a href="#historias">Ler histórias</a>
+          <a href="#blog">Ler artigos</a>
+          <a href="#faq">Ver FAQ completo</a>
+        </div>
+
+        <hr class="sep">
+
+        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:12px">
+          <a class="btn" href="#metodos" onclick="scrollToId(event,'metodos')">Começar Método Rápido</a>
+          <a class="badge" href="#historias" onclick="scrollToId(event,'historias')">Depoimentos Reais</a>
+        </div>
+
+        <div style="margin-top:18px" class="readable">
+          <h2>Por que este site funciona</h2>
+          <p class="small muted">A Lei da Suposição funciona melhor quando combinada com ação concreta. Aqui você encontra práticas estruturadas (com porquês), estudos de caso e recursos para aplicar sem se perder em promessas mágicas.</p>
+
+          <h3 style="margin-top:12px">Como usar esse material</h3>
+          <ol>
+            <li>Escolha um método listado abaixo (comece pelo Protocolo de 5 minutos).</li>
+            <li>Pratique por 7 dias seguidos, registrando pequenos sinais no Jornal de Provas.</li>
+            <li>Ajuste o método ao seu dia a dia — o objetivo é consistência, não perfeição.</li>
+          </ol>
+        </div>
+      </div>
+
+      <aside class="card side-card" aria-labelledby="side-title" role="complementary">
+        <h3 id="side-title">Recursos grátis</h3>
+        <p class="muted">Faça o download do kit inicial, planner e áudios (simulados aqui).</p>
+
+        <div style="display:flex;gap:10px;margin-top:10px">
+          <div style="flex:1">
+            <label class="small">Seu e-mail</label>
+            <input type="email" placeholder="seu@email.com" id="newsletterEmail">
+            <button class="btn" onclick="subscribe()">Receber kit grátis</button>
+          </div>
+        </div>
+
+        <hr class="sep">
+
+        <h4>O que você encontra aqui</h4>
+        <ul class="small muted">
+          <li>Protocolos passo a passo (rápidos e profundos)</li>
+          <li>Textos longos com exemplos</li>
+          <li>Histórias reais (relatos editados para clareza)</li>
+          <li>Ferramentas para medir progresso</li>
+        </ul>
+      </aside>
+    </section>
+
+    <!-- MÉTODOS -->
+    <section id="metodos" aria-labelledby="metodos-title">
+      <h2 id="metodos-title">Métodos reais e detalhados</h2>
+      <p class="lead muted">Cada método abaixo tem objetivo, passos, exemplos práticos e variações para diferentes níveis (iniciante/intermediário/avançado).</p>
+
+      <div class="grid-3" style="margin-top:12px">
+        <!-- Method 1: Protocolo 5 minutos (detailed) -->
+        <article class="card post-card" aria-labelledby="m1">
+          <img class="post-thumb" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='600'><rect width='100%' height='100%' fill='%23ffd9ec'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-size='42' fill='%234a2638'>Protocolo 5 minutos</text></svg>" alt="">
+          <div style="padding:12px">
+            <h3 id="m1">Protocolo 5 minutos — foco rápido</h3>
+            <p class="muted">Objetivo: alinhar estado emocional e intenção quando o tempo é curto.</p>
+
+            <h4>Passos (exato)</h4>
+            <ol>
+              <li>Encontre um lugar curto de 1–2 minutos para se sentar.</li>
+              <li>Respire profundamente 6 vezes (4s in / 6s out).</li>
+              <li>Diga em voz baixa sua afirmação principal 3 vezes no presente (ex.: "Eu atraio oportunidades alinhadas").</li>
+              <li>Visualize por 30 segundos um pequeno detalhe sensorial (a luz, cheiro, ou uma sensação no peito) como se já fosse real.</li>
+              <li>Liste mentalmente (ou em 30s no celular) UMA ação prática que você fará nas próximas 24h relacionada ao desejo.</li>
+              <li>Finalizar com 10s de gratidão: sinta sinceramente.</li>
+            </ol>
+
+            <h4>Exemplo real</h4>
+            <p class="small muted">Desejo: atrair clientes. Afirmação: "Clientes interessados me encontram com facilidade". Ação: enviar 3 mensagens personalizadas para possíveis clientes hoje.</p>
+
+            <h4>Variações</h4>
+            <ul class="small muted">
+              <li><strong>Iniciante</strong>: reduzir visualização a 15s.</li>
+              <li><strong>Avançado</strong>: registrar 1 prova por dia no Jornal de Provas.</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Method 2: Script do Futuro -->
+        <article class="card post-card" aria-labelledby="m2">
+          <img class="post-thumb" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='600'><rect width='100%' height='100%' fill='%23fff0f7'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-size='42' fill='%234a2638'>Script do Futuro</text></svg>" alt="">
+          <div style="padding:12px">
+            <h3 id="m2">Script do Futuro — escrever como se já tivesse</h3>
+            <p class="muted">Objetivo: criar um registro detalhado que condiciona a mente ao resultado.</p>
+
+            <h4>Estrutura sugerida (1 página)</h4>
+            <ol>
+              <li>Comece com a data escrita no presente (ex.: "10 de agosto de 2026 — meu dia ideal").</li>
+              <li>Descreva o cenário: onde você está, como sua casa/ambiente parece, o que veste.</li>
+              <li>Descreva o que aconteceu no dia: chamadas, mensagens, reuniões, ganhos.</li>
+              <li>Inclua diálogo — o que as pessoas dizem a você.</li>
+              <li>Finalize com sensações: como seu corpo reage, cheiro, som, emoção predominante.</li>
+            </ol>
+
+            <h4>Exemplo</h4>
+            <p class="small muted">\"Hoje recebi o e-mail confirmando a vaga. Eu sorri, fiquei com as mãos tremendo de emoção, agradeci em voz alta...\" — escrever como se fosse real aumenta a coerência entre emoção e expectativa.</p>
+
+            <h4>Dicas de escrita</h4>
+            <ul class="small muted">
+              <li>Use tempo presente (não 'vou conseguir', mas 'eu tenho').</li>
+              <li>Seja específico nos detalhes sensoriais.</li>
+              <li>Escreva uma página inteira — mais texto gera mais 'evidência' para sua mente.</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Method 3: Jornal de Provas -->
+        <article class="card post-card" aria-labelledby="m3">
+          <img class="post-thumb" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='600'><rect width='100%' height='100%' fill='%23ffeef8'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-size='42' fill='%234a2638'>Jornal de Provas</text></svg>" alt="">
+          <div style="padding:12px">
+            <h3 id="m3">Jornal de Provas — documentar sinais</h3>
+            <p class="muted">Objetivo: criar um histórico de evidências que fortalece sua crença.</p>
+
+            <h4>Formato diário (5 minutos)</h4>
+            <ol>
+              <li>Data e hora.</li>
+              <li>Três pequenas evidências observadas (mensagens, coincidências, pequenas vitórias).</li>
+              <li>Uma ação tomada que reforça o objetivo.</li>
+              <li>Uma nota emocional: como você se sentiu hoje?</li>
+            </ol>
+
+            <h4>Por que funciona</h4>
+            <p class="small muted">A tendência natural é lembrar do que falta. Registrar provas muda o foco para o que já está ocorrendo, reduz ansiedade e cria um ciclo positivo.</p>
+
+            <h4>Exemplo de entrada</h4>
+            <p class="small muted">10/08 — Provas: 1) mensagem de um cliente elogiando; 2) convite para live; 3) comentário nas redes. Ação: enviei propostas. Emoção: surpresa e gratidão.</p>
+          </div>
+        </article>
+      </div>
+
+      <!-- deeper methods section -->
+      <div style="margin-top:18px" class="card">
+        <h3>Protocolos avançados (para quem já pratica)</h3>
+        <p class="muted">Se você já experimentou os métodos básicos, experimente combinar duas práticas num ciclo semanal:</p>
+
+        <h4>Semana modelo (ciclo de 7 dias)</h4>
+        <ol>
+          <li>Segunda: Script do Futuro (1 página).</li>
+          <li>Terça: Protocolo 5 minutos + ação prática do dia.</li>
+          <li>Quarta: Visualização guiada longa (8–12 minutos antes de dormir).</li>
+          <li>Quinta: Revisar Jornal de Provas; atualizar metas operacionais.</li>
+          <li>Sexta: Repetir afirmações à tarde + socializar (ação externa).</li>
+          <li>Sábado: Pequena celebração das vitórias da semana.</li>
+          <li>Domingo: Planejar micro-ações para a próxima semana.</li>
+        </ol>
+
+        <h4>Dicas de segurança emocional</h4>
+        <ul class="muted small">
+          <li>Se surgir ansiedade intensa, reduza a prática e faça exercícios respiratórios; busque apoio profissional se necessário.</li>
+          <li>Não use manifestação para manipular outras pessoas — foque em transformações pessoais e ações éticas.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- HISTÓRIAS REAIS -->
+    <section id="historias" aria-labelledby="hist-title" style="margin-top:26px">
+      <h2 id="hist-title">Histórias reais — relatos completos</h2>
+      <p class="lead muted">Relatos enviados por leitores. Textos editados apenas para clareza — mantivemos a essência e os aprendizados.</p>
+
+      <div style="margin-top:12px;display:flex;flex-direction:column;gap:12px">
+        <!-- Story 1 -->
+        <article class="story" aria-labelledby="s1">
+          <div style="display:flex;gap:12px;align-items:center">
+            <div style="width:72px;height:72px;border-radius:12px;background:#fff;padding:6px;display:flex;align-items:center;justify-content:center;">
+              <strong style="color:var(--accent)">L.</strong>
+            </div>
+            <div>
+              <strong id="s1">Consegui o emprego dos sonhos — L., 28 anos</strong>
+              <div class="small muted">Enviado: 2024 — editado</div>
+            </div>
+          </div>
+
+          <div style="margin-top:10px;color:var(--muted)">
+            <p>Eu sempre duvidei que poderia conseguir uma vaga tão boa. Trabalhei em lugares que não me valorizavam e achava que era sorte das outras pessoas. Comecei a usar afirmações todos os dias, escrevendo no meu caderno: "Eu trabalho em um ambiente que me respeita e me paga bem" — no presente, com detalhes.</p>
+
+            <p>Além disso, adotei o Script do Futuro: escrevia uma página descrevendo meu dia ideal no novo emprego. Imaginar o caminho até a sala, o som do teclado, a conversa com meu colega me ajudou a sentir como seria. Não foi só pensamento: eu também melhorei meu currículo e enviei candidaturas direcionadas (ação).</p>
+
+            <p>Em duas semanas, recebi uma ligação para entrevista. Durante a entrevista, senti calma — como se eu já conhecesse o lugar. Duas semanas depois, o convite. O que me ajudou? A combinação: afirmações regulares, script do futuro e pequenas ações práticas (redigir e enviar candidaturas melhores).</p>
+
+            <p><strong>Aprendizados:</strong> registre provas (elogios, convites), mantenha ações diárias e trate a prática como treino, não mágica.</p>
+          </div>
+        </article>
+
+        <!-- Story 2 -->
+        <article class="story" aria-labelledby="s2">
+          <div style="display:flex;gap:12px;align-items:center">
+            <div style="width:72px;height:72px;border-radius:12px;background:#fff;padding:6px;display:flex;align-items:center;justify-content:center;">
+              <strong style="color:var(--accent)">M.</strong>
+            </div>
+            <div>
+              <strong id="s2">Reaproximação com a irmã — M., 35 anos</strong>
+              <div class="small muted">Enviado: 2023 — editado</div>
+            </div>
+          </div>
+
+          <div style="margin-top:10px;color:var(--muted)">
+            <p>Minha relação com minha irmã sempre foi tensa. Eu queria reconectar, mas acabava pressionando. Mudei a abordagem: usei afirmações focadas em paz e conexões pequenas — por exemplo, "Minha irmã e eu nos aproximamos com gentileza" — e escrevi cartas que não enviei (apenas para definir o tom emocional).</p>
+
+            <p>Ao mesmo tempo, comecei a fazer pequenos gestos (enviar músicas, mensagens curtas sem cobrança). Aos poucos, as conversas voltaram — primeiro elogios simples, depois um convite para um café. Hoje temos um contato mais carinhoso. O ponto chave foi reduzir a ansiedade e trocar a postura de 'consertar' por 'oferecer presença'.</p>
+
+            <p><strong>Aprendizados:</strong> manifestação pode ser usada para calibrar intenção emocional; combine com ações pequenas e consistentes.</p>
+          </div>
+        </article>
+
+        <!-- Story 3 -->
+        <article class="story" aria-labelledby="s3">
+          <div style="display:flex;gap:12px;align-items:center">
+            <div style="width:72px;height:72px;border-radius:12px;background:#fff;padding:6px;display:flex;align-items:center;justify-content:center;">
+              <strong style="color:var(--accent)">A.</strong>
+            </div>
+            <div>
+              <strong id="s3">Saúde mental e prática combinada — A., 42 anos</strong>
+              <div class="small muted">Enviado: 2024 — editado</div>
+            </div>
+          </div>
+
+          <div style="margin-top:10px;color:var(--muted)">
+            <p>Depois de muitos meses de ansiedade, comecei a integrar visualização e afirmações com terapia. Sozinho, eu não estava conseguindo estabilizar emoções; com terapia, consegui ferramentas práticas e a Lei da Suposição me deu um foco emocional diferente — imaginar sensações de calma e confiança.</p>
+
+            <p>Em três meses notei redução de crises e mais clareza nas decisões. A combinação foi essencial: terapia para tratar causas e práticas de manifestação para construir um estado emocional desejado.</p>
+
+            <p><strong>Aprendizados:</strong> práticas de manifestação não substituem tratamento profissional quando necessário — são complementares.</p>
+          </div>
+        </article>
+
+        <!-- Story 4 -->
+        <article class="story" aria-labelledby="s4">
+          <div style="display:flex;gap:12px;align-items:center">
+            <div style="width:72px;height:72px;border-radius:12px;background:#fff;padding:6px;display:flex;align-items:center;justify-content:center;">
+              <strong style="color:var(--accent)">S.</strong>
+            </div>
+            <div>
+              <strong id="s4">Vendas pequenas que viraram renda — S., 22 anos</strong>
+              <div class="small muted">Enviado: 2022 — editado</div>
+            </div>
+          </div>
+
+          <div style="margin-top:10px;color:var(--muted)">
+            <p>Eu fazia artesanato e postava fotos tímidas. Comecei com afirmações de atração de clientes e melhorei as fotos (ação). Em várias semanas as vendas subiram e pude abrir uma microloja online.</p>
+
+            <p>O que mudou: o foco em pequenas ações junto às afirmações. Também registrei provas: comentários de clientes, pedidos, reposts.</p>
+
+            <p><strong>Aprendizados:</strong> combinação de ação, apresentação (fotos) e consistência nas práticas gera mudanças concretas.</p>
+          </div>
+        </article>
+      </div>
+
+      <div style="margin-top:12px" class="small muted">
+        <strong>Nota:</strong> relatos são reais em essência, mas editados para clareza e anonimização quando necessário.
+      </div>
+    </section>
+
+    <!-- BLOG (artigos longos prontos) -->
+    <section id="blog" style="margin-top:26px">
+      <h2>Artigos completos — leia e aplique</h2>
+      <p class="lead muted">Artigos longos com seções, exemplos práticos e chamadas para ação que convidam o leitor a testar as técnicas.</p>
+
+      <!-- Article 1 -->
+      <article class="card" style="margin-top:12px" id="post1">
+        <h3>Como escrever afirmações que realmente funcionam</h3>
+        <p class="muted">Guia completo — formato, exemplos e exercícios práticos.</p>
+
+        <h4>Introdução</h4>
+        <p>Afirmações são frases curtas que comunicam ao seu sistema nervoso o estado desejado. Para serem eficazes, elas precisam ser no tempo presente, específicas e emocionalmente carregadas.</p>
+
+        <h4>Formato ideal (passo a passo)</h4>
+        <ol>
+          <li>Escreva no presente: evite "vou" — prefira "eu sou", "eu tenho".</li>
+          <li>Seja específico: troque "sucesso" por "2 novos clientes por mês".</li>
+          <li>Use sensação: acrescente percepção física — "sinto tranquilidade no peito".</li>
+          <li>Repita com emoção: repita 3–10x, sentindo o que fala.</li>
+        </ol>
+
+        <h4>Exercício prático (7 dias)</h4>
+        <ol>
+          <li>Dia 1: criar 3 afirmações centrais.</li>
+          <li>Dia 2: praticar 5 minutos pela manhã e 5 à noite.</li>
+          <li>Dia 3: escrever pequenas provas relacionadas.</li>
+          <li>Dia 4–7: combinar afirmação + 1 ação diária.</li>
+        </ol>
+
+        <h4>Exemplos</h4>
+        <ul class="muted small">
+          <li>Genérico → Específico: "Sou próspera" → "Tenho clientes recorrentes que pagam X por mês"</li>
+          <li>Emoção: "Sinto-me segura e capaz ao lidar com minhas tarefas"</li>
+        </ul>
+
+        <h4>Conclusão</h4>
+        <p>Afirmações são ferramentas de reprogramação emocional. Combine com ações práticas e registro de provas para maximizar impacto.</p>
+      </article>
+
+      <!-- Article 2 -->
+      <article class="card" style="margin-top:12px" id="post2">
+        <h3>Visualização guiada passo a passo (roteiro)</h3>
+        <p class="muted">Roteiro de 8–12 minutos para usar antes de dormir.</p>
+
+        <h4>Preparação</h4>
+        <p>Deite-se ou sente-se com conforto. Diminuir luzes ajuda. Respire 6 vezes lentas para regular o corpo.</p>
+
+        <h4>Roteiro (minuto a minuto)</h4>
+        <ol>
+          <li>Min 0–1: Respiração e relaxamento.</li>
+          <li>Min 1–3: Imagine o local onde você estaria com o desejo realizado (detalhes: cores, objetos).</li>
+          <li>Min 3–6: Traga pessoas envolvidas: imagine diálogos, sorrisos, uma resposta positiva.</li>
+          <li>Min 6–8: Sinta a emoção física (calor, leveza, alívio) e permaneça nessa sensação.</li>
+          <li>Min 8–10: Agradeça mentalmente e volte suavemente ao presente.</li>
+        </ol>
+
+        <h4>Dicas</h4>
+        <ul class="muted small">
+          <li>Use áudio se ajudar (gravar sua própria voz lendo o roteiro).</li>
+          <li>Não exagere em expectativas — mantenha a prática como treino emocional.</li>
+        </ul>
+      </article>
+
+      <!-- Article 3 -->
+      <article class="card" style="margin-top:12px" id="post3">
+        <h3>Transforme micro-ações em resultados reais</h3>
+        <p class="muted">Como fragmentar metas grandes em ações diárias que se somam.</p>
+
+        <h4>Por que micro-ações funcionam</h4>
+        <p>Grandes metas criam paralisia. Micro-ações reduzem fricção e geram evidência cumulativa.</p>
+
+        <h4>Plano prático</h4>
+        <ol>
+          <li>Defina um resultado mensurável (ex.: 3 clientes novos em 60 dias).</li>
+          <li>Liste 30 micro-ações possíveis.</li>
+          <li>Escolha 1 ação por dia e registre no Jornal de Provas.</li>
+          <li>Revise semanalmente e ajuste.</li>
+        </ol>
+
+        <h4>Exemplo</h4>
+        <p class="muted">Para atrair clientes: 1) enviar 1 e-mail personalizado; 2) postar um case nas redes; ...</p>
+      </article>
+    </section>
+
+    <!-- FAQ LONG -->
+    <section id="faq" aria-labelledby="faq-title" style="margin-top:26px">
+      <h2 id="faq-title">FAQ — perguntas frequentes e respostas profundas</h2>
+
+      <details open>
+        <summary>1. A Lei da Suposição funciona para qualquer pessoa?</summary>
+        <div style="margin-top:8px" class="muted">
+          <p>Depende. A prática pode ajudar a alinhar emoções e comportamento, o que aumenta chances de resultados — mas não é mágica. Sucesso costuma vir da combinação entre crença (ou sensação interna coerente) e ações práticas. Se você quer resultados concretos, combine práticas com planejamento e ações mensuráveis.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>2. Quanto tempo até ver resultados?</summary>
+        <div style="margin-top:8px" class="muted">
+          <p>Não há um prazo fixo. Para pequenas mudanças é comum notar sinais em semanas; para desejos maiores, pode levar meses. O importante é medir progresso por sinais e micro-ações, não por um prazo rígido.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>3. Preciso acreditar 100% para funcionar?</summary>
+        <div style="margin-top:8px" class="muted">
+          <p>Não. Mesmo praticantes que relatam dúvidas ganham benefícios ao aplicar métodos. A consistência e as micro-ações frequentemente criam evidência, que por sua vez aumenta a crença. Comece com uma postura de experimento.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>4. Posso usar isso para influenciar outra pessoa?</summary>
+        <div style="margin-top:8px" class="muted">
+          <p>Não recomendamos tentativas de manipular outras pessoas. Práticas de manifestação devem focar sua própria mudança interior e ações éticas. Foque no que você pode controlar: seu comportamento, comunicação e contribuições.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>5. E se eu ficar ansioso esperando?</summary>
+        <div style="margin-top:8px" class="muted">
+          <p>Reduza intensidade, volte a práticas curtas (Protocolo 5 minutos), faça exercícios respiratórios e registre provas para reduzir incerteza. Se a ansiedade for persistente, busque apoio de um profissional de saúde mental.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>6. Como integrar com terapia/coach?</summary>
+        <div style="margin-top:8px" class="muted">
+          <p>Ótima ideia — terapia/coach cuidam de estrutura psicológica e estratégias, enquanto práticas como afirmações e scripts ajudam a manter o estado emocional desejado e a motivação para agir.</p>
+        </div>
+      </details>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" style="margin-top:26px">
+      <h2>Contato — envie sua história</h2>
+      <p class="muted">Quer ter sua história publicada aqui ou propor um conteúdo? Conte pra gente.</p>
+
+      <div class="grid-2" style="margin-top:12px">
+        <form class="card" onsubmit="submitContact(event)">
+          <label class="small">Nome</label>
+          <input type="text" id="contactName" required placeholder="Seu nome">
+          <label class="small">E-mail</label>
+          <input type="email" id="contactEmail" required placeholder="seu@email.com">
+          <label class="small">Sua história (ou proposta)</label>
+          <textarea id="contactMessage" required placeholder="Escreva sua experiência ou proposta" style="min-height:160px"></textarea>
+          <button type="submit" class="btn">Enviar</button>
+          <div id="contactFeedback" class="small muted" style="margin-top:10px;display:none"></div>
+        </form>
+
+        <div class="card">
+          <h4>Trabalhe conosco</h4>
+          <p class="muted">Aceitamos colaborações (artigos convidados, entrevistas, parcerias). Envie proposta com escopo e público-alvo.</p>
+          <p class="muted"><strong>Email:</strong> contato@leisup.com (simulação)</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer">
+      <div style="max-width:1200px;margin:0 auto">
+        <div style="display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap">
+          <div>© 2025 Lei da Suposição — Rosa Fofo. Conteúdo inspiracional.</div>
+          <div class="muted">Política de Privacidade • Termos • contato@leisup.com</div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    // Small interactive helpers
+    function scrollToId(e, id){
+      if(e) e.preventDefault();
+      const el = document.getElementById(id);
+      if(el) el.scrollIntoView({behavior:'smooth', block:'start'});
+    }
+
+    function subscribe(){
+      const email = document.getElementById('newsletterEmail').value || '';
+      if(!email.includes('@')) {
+        alert('Digite um e-mail válido (simulado).');
+        return;
+      }
+      // Simulação de cadastro
+      alert('Obrigada! Verifique seu e-mail para o kit (simulação).');
+      document.getElementById('newsletterEmail').value = '';
+    }
+
+    function submitContact(e){
+      e.preventDefault();
+      const name = document.getElementById('contactName').value.trim();
+      const email = document.getElementById('contactEmail').value.trim();
+      const message = document.getElementById('contactMessage').value.trim();
+      if(!name || !email || !message) {
+        alert('Por favor preencha todos os campos.');
+        return;
+      }
+      // Simulação: exibimos feedback e limpamos formulário
+      const fb = document.getElementById('contactFeedback');
+      fb.style.display = 'block';
+      fb.textContent = 'Mensagem enviada! Obrigada por compartilhar — responderemos (simulação).';
+      document.getElementById('contactName').value = '';
+      document.getElementById('contactEmail').value = '';
+      document.getElementById('contactMessage').value = '';
+    }
+  </script>
+</body>
+</html>
